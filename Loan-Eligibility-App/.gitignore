@@ -1,0 +1,9 @@
+# Node modules and build outputs
+node_modules/
+dist/
+build/
+out/
+*.log
+.env
+.DS_Store
+.vscode/

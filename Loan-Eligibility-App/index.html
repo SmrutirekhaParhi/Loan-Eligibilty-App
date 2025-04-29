@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Form</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+  <div class="custom-title-bar">
+    <img src="./assets/menu-bar.png" alt="Menu" class="title-bar-icon" id="menuButton">
+    <div class="title-text">Project Name</div>
+    <div class="title-bar-spacer"></div>
+    <img src="./assets/minimize-icon.png" alt="Minimize" class="title-bar-icon" id="minimizeButton">
+    <img src="./assets/maximize-icon.png" alt="Maximize" class="title-bar-icon" id="maximizeButton">
+    <img src="./assets/close-icon.png" alt="Close" class="title-bar-icon" id="closeButton">
+  </div>
+
+    <div class="container">
+        <h1>LOAN PREDICTION FORM</h1>
+        <h3>Enter Your Details</h3>
+
+        <div class="form-grid">
+            <input type="text" placegit rm -r --cached .holder="Name" class="input-box">
+            <select class="dropdown">
+                <option disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <input type="number" placeholder="Loan Amount" class="input-box">
+
+            <select class="dropdown">
+                <option disabled selected>Married</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <select class="dropdown">
+                <option disabled selected>Self Employed</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <select class="dropdown">
+                <option disabled selected>Loan Amount Term</option>
+                <option>12</option>
+                <option>36</option>
+                <option>60</option>
+            </select>
+
+            <select class="dropdown">
+                <option disabled selected>Dependents</option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3+</option>
+            </select>
+            <input type="number" placeholder="Applicant Income" class="input-box">
+            <select class="dropdown">
+                <option disabled selected>Credit History</option>
+                <option>Good (1)</option>
+                <option>Bad (0)</option>
+            </select>
+
+            <select class="dropdown">
+                <option disabled selected>Education</option>
+                <option>Graduate</option>
+                <option>Not Graduate</option>
+            </select>
+            <input type="number" placeholder="Co-applicant Income" class="input-box">
+            <select class="dropdown">
+                <option disabled selected>Property Area</option>
+                <option>Urban</option>
+                <option>Semiurban</option>
+                <option>Rural</option>
+            </select>
+
+        </div>
+
+        <button id="predictButton">PREDICT</button>
+    </div>
+
+    <script src="/renderer.js"></script>
+</body>
+</html>
