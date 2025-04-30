@@ -47,6 +47,9 @@ body {
 .container {
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -114,4 +117,73 @@ h3 {
   background-color: #507023;
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#result-icon {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+#result {
+  width: 500px;
+  height: 50px;
+  background-color: #507023;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result_bad {
+  width: 500px;
+  height: 50px;
+  background-color: #F6BC7C;
+  color: #B53524;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.back-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 8px;
+  -webkit-app-region: no-drag; /* prevent dragging over the icon */
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.result_image {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.spacer {
+  width: 75px;
+  height: 300px;
 }
