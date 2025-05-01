@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approved</title>
+    <title>Data Visualization</title>
     <link rel="stylesheet" href="style.css"> 
     
 </head>
@@ -22,12 +22,23 @@
     <div class="back-button" id="backButton">
       <img src="./assets/back-icon.png" alt="Back" class="back-icon">
     </div>
-    <h2 class="congratulations">Congratulations!</h1>
-    <div class="result_image">
-        <div class="spacer"></div>
-        <img src="./assets/approved-icon.png" alt="Approved" class="result-icon">
-    </div>    
-    <div id="result" class="result">You are Eligible</div>
+    <h1>DATA VISUALIZATION</h1>
+    <div class="graph-container">
+      <div class="graph" id="graph1">
+        <img src="./assets/loan_status_graph.png" alt="Loan Status Graph" class="graph-image">
+        <div class="graph-text">Loan Status by Property Area</div>
+        <div class="graph-spacer"></div>
+      </div>
+      <div class="graph" id="graph2">
+        <div class="graph-spacer"></div>
+        <div class="graph-text">Gender Distribution</div>
+        <img src="./assets/gender_distribution_graph.png" alt="Gender Distribution Graph" class="graph-image">
+      </div>
+      <div class="graph" id="graph3">
+        <img src="./assets/loan_approval_graph.png" alt="Loan Approval Graph" class="graph-image">
+        <div class="graph-text">Loan Approval Predictions</div>
+        <div class="graph-spacer"></div>
+      </div>
   </div>
 
   <script src="/renderer.js"></script>
