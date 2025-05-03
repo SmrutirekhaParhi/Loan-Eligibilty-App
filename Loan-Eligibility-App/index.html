@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+<div id="overlay"></div>
 <body>
   <div class="custom-title-bar">
     <img src="./assets/menu-bar.png" alt="Menu" class="title-bar-icon" id="menuButton">
@@ -44,8 +45,9 @@
             </select>
             <select class="dropdown">
                 <option disabled selected>Loan Amount Term</option>
-                <option>12</option>
-                <option>36</option>
+                <option>360</option>
+                <option>180</option>
+                <option>120</option>
                 <option>60</option>
             </select>
 
@@ -59,14 +61,14 @@
             <input type="number" placeholder="Applicant Income" class="input-box">
             <select class="dropdown">
                 <option disabled selected>Credit History</option>
-                <option>Good (1)</option>
-                <option>Bad (0)</option>
+                <option>0</option>
+                <option>1</option>
             </select>
 
             <select class="dropdown">
                 <option disabled selected>Education</option>
                 <option>Graduate</option>
-                <option>Not Graduate</option>
+                <option>Non Graduate</option>
             </select>
             <input type="number" placeholder="Co-applicant Income" class="input-box">
             <select class="dropdown">
@@ -80,6 +82,16 @@
 
         <button id="predictButton">PREDICT</button>
     </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#" style="color:white;">Home</a></li>
+            <li><a href="#" style="color:white;">About</a></li>
+            <li><a href="#" style="color:white;">Contact</a></li>
+        </ul>
+  </div>
 
     <script src="/renderer.js"></script>
 </body>
