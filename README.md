@@ -1,2 +1,2 @@
 # Loan-Eligibilty-App
-Presentation Link: https://www.canva.com/design/DAGmSPFyFBU/8xR88orvonIFqaIrkyStYw/edit?utm_content=DAGmSPFyFBU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Presentation Link: https://drive.google.com/file/d/1oMdQnRfUO2ENptJIw4Gxt3DWy4NaAe-P/view?usp=sharing
