@@ -119,19 +119,19 @@ h3 {
 }
 
 #result-icon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-top: 20px;
 }
 
 #result {
-  width: 500px;
-  height: 50px;
+  width: 400px;
+  height: 40px;
   background-color: #507023;
   color: white;
   font-weight: bold;
-  font-size: 35px;
-  padding: 10px 40px;
+  font-size: 28px;
+  padding: 10px 30px;
   border: none;
   border-radius: 15px;
   display: flex;
@@ -140,18 +140,26 @@ h3 {
 }
 
 #result_bad {
-  width: 500px;
-  height: 50px;
+  width: 400px;
+  height: 40px;
   background-color: #F6BC7C;
   color: #B53524;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
   padding: 10px 40px;
   border: none;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.confidence {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4169E2;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .back-button {
@@ -291,27 +299,21 @@ h3 {
 
 /* SIDEBAR STYLING */
 #sidebar {
-  width: 250px;
-  height: 626px;
-  background-color: #fff8dc; /* light cream background */
+  width: 220px;
+  height: 585px;
+  background-color: #FDFCE8; /* light cream background */
   position: fixed;
   top: 0;
   left: -300px; /* hidden by default */
-  transition: left 0.3s ease;
+  transition: left 0.4s ease;
   padding: 20px;
+  padding-left: 15px;
   z-index: 1000;
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   font-family: 'Segoe UI', sans-serif;
-}
-
-/* Sidebar Header */
-#sidebar h3 {
-  font-size: 1rem;
-  margin-top: 0;
-  color: #555;
-  margin-bottom: 20px;
+  pointer-events: auto;
 }
 
 /* Sidebar Links */
@@ -322,21 +324,22 @@ h3 {
 
 #sidebar ul li {
   margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 #sidebar ul li a {
   display: block;
-  background-color: #3e64ff;
+  background-color: #4169E2;
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 5px 15px;
+  border-radius: 15px;
   transition: background-color 0.2s ease;
   font-weight: 500;
 }
 
 #sidebar ul li a:hover {
-  background-color: #274bdb;
+  background-color: #2244aa;
 }
 
 #sidebar.active {
@@ -362,5 +365,5 @@ h3 {
 
 /* Sidebar comes on top of overlay */
 #sidebar {
-  z-index: 999;
+  z-index: 1000;
 }

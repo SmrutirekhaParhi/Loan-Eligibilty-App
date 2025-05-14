@@ -103,3 +103,6 @@ print(classification_report(y_test, y_pred))
 # Confusion Matrix
 print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
+
+import joblib
+joblib.dump(model, 'svm_loan_model.pkl')

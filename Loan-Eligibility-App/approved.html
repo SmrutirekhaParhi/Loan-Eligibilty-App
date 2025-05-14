@@ -10,8 +10,8 @@
 </head>
 <body>
   <div class="custom-title-bar">
-    <img src="./assets/menu-bar.png" alt="Menu" class="title-bar-icon" id="menuButton">
-    <div class="title-text">Project Name</div>
+    <img src="./assets/menu-bar.png" alt="Menu" class="title-bar-icon" id="menuButtonTop">
+    <div class="title-text">Loan AI</div>
     <div class="title-bar-spacer"></div>
     <img src="./assets/minimize-icon.png" alt="Minimize" class="title-bar-icon" id="minimizeButton">
     <img src="./assets/maximize-icon.png" alt="Maximize" class="title-bar-icon" id="maximizeButton">
@@ -28,8 +28,32 @@
         <img src="./assets/approved-icon.png" alt="Approved" class="result-icon">
     </div>    
     <div id="result" class="result">You are Eligible</div>
+    <div id="confidence" class="confidence">Loading confidence score...</div>
   </div>
 
-  <script src="/renderer.js"></script>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <img src="./assets/menu-expanded-bar.png" alt="Menu" class="title-bar-icon" id="menuButtonSidebar">
+    <ul>
+        <li><a href="#" style="color:white;" id="loanPrediction">Loan Prediction</a></li>
+        <li><a href="#" style="color:white;" id="loanViz">Loan Data Visualization</a></li>
+        <li><a href="#" style="color:white;" id="about">About us</a></li>
+    </ul>
+  </div>
+  <!-- Overlay -->
+  <div id="overlay"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const confidence = localStorage.getItem('confidenceScore');
+      if (confidence) {
+        const div = document.getElementById('confidence');
+        div.innerText = `Confidence: ${confidence}`;
+        // Optional: Clear it afterwards
+        localStorage.removeItem('confidenceScore');
+      }
+    });
+  </script>  
+  <script src="../Loan-Eligibility-App/renderer.js"></script>
+  
 </body>
 </html>

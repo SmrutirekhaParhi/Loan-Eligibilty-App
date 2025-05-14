@@ -9,8 +9,9 @@
     
 </head>
 <body>
+  <div id="overlay"></div>
   <div class="custom-title-bar">
-    <img src="./assets/menu-bar.png" alt="Menu" class="title-bar-icon" id="menuButton">
+    <img src="./assets/menu-bar.png" alt="Menu" id="menuButtonTop" class="title-bar-icon">
     <div class="title-text">Project Name</div>
     <div class="title-bar-spacer"></div>
     <img src="./assets/minimize-icon.png" alt="Minimize" class="title-bar-icon" id="minimizeButton">
@@ -39,8 +40,18 @@
         <div class="graph-text">Loan Approval Predictions</div>
         <div class="graph-spacer"></div>
       </div>
+    </div>
   </div>
-
-  <script src="/renderer.js"></script>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <img src="./assets/menu-expanded-bar.png" alt="Menu" class="title-bar-icon" id="menuButtonSidebar">
+    <ul>
+        <li><a href="#" style="color:white;" id="loanPrediction">Loan Prediction</a></li>
+        <li><a href="#" style="color:white;" id="loanViz">Loan Data Visualization</a></li>
+        <li><a href="#" style="color:white;" id="about">About us</a></li>
+    </ul>
+  </div>
+  
+  <script src="./renderer.js"></script>
 </body>
 </html>
