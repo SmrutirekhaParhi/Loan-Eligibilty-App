@@ -1,4 +1,4 @@
-# Loan-Eligibilty-App
+# Loan-Eligibility-App
 
 <p>🔗<a href="https://drive.google.com/file/d/1oMdQnRfUO2ENptJIw4Gxt3DWy4NaAe-P/view?usp=sharing">Presentation Link</a></p>
 <br>
